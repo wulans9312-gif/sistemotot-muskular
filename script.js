@@ -16,7 +16,7 @@ function scrollToSection(sectionId) {
     }
 }
 
-// TOGGLE SUB-BLOCK (JENIS OTOT / ANATOMI MAKRO)
+// TOGGLE SUB-BLOCK
 function toggleSubBlock(blockId, btnElement) {
     const parent = btnElement.parentElement;
     const buttons = parent.querySelectorAll('.toggle-btn');
@@ -53,7 +53,7 @@ function toggleAccordion(headerElement) {
     }
 }
 
-// INTERACTIVE CARD TOGGLE (UMUM UNTUK SEMUA KARTU KLIK)
+// INTERACTIVE CARD TOGGLE
 function toggleDetail(cardElement) {
     const detail = cardElement.querySelector('.card-detail');
     if (detail) {
