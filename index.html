@@ -79,7 +79,7 @@
         </div>
     </section>
 
-    <!-- CONTENT SECTIONS (LONG SCROLL) -->
+    <!-- CONTENT SECTIONS -->
     <main class="main-content">
 
         <!-- 1. ANATOMI MAKROSKOPIS -->
@@ -89,44 +89,49 @@
                 <p>Sistem muskular merupakan alat gerak aktif yang menghasilkan gerakan melalui kontraksi otot. Kontraksi otot menghasilkan gaya yang diteruskan ke tulang melalui tendon, sedangkan tulang berperan sebagai alat gerak pasif. Selain menghasilkan gerakan, sistem muskular berperan dalam mempertahankan postur, menstabilkan sendi, menghasilkan panas, dan menyimpan glikogen. Tubuh manusia memiliki lebih dari 600 otot yang secara keseluruhan menyusun sekitar 40–50% berat tubuh.</p>
             </div>
 
-            <!-- TAB / TOGGLE INTERAKTIF -->
             <div class="interactive-control">
                 <button class="toggle-btn active" onclick="toggleSubBlock('sec1-jenis-otot', this)">💪 Jenis Otot</button>
                 <button class="toggle-btn" onclick="toggleSubBlock('sec1-anatomi-makro', this)">🔍 Anatomi Makroskopis</button>
             </div>
 
-            <!-- SUB BLOCK: JENIS OTOT -->
+            <!-- SUB BLOCK: JENIS OTOT (BISA DIKLIK MASING-MASING) -->
             <div id="sec1-jenis-otot" class="sub-block zoom-effect active">
                 <img src="images/gambar_2_3.jpg" alt="Jenis-Jenis Otot" class="content-img">
                 <div class="cards-grid-3">
-                    <div class="card card-red">
+                    <div class="interactive-card card-red" onclick="toggleDetail(this)">
                         <h4>🟥 Otot Rangka</h4>
-                        <p>Melekat pada tulang dan bekerja secara sadar (volunter). Kontraksinya menghasilkan berbagai gerakan tubuh serta mempertahankan posisi tubuh.</p>
-                        <ul>
-                            <li>Melekat pada tulang</li>
-                            <li>Bekerja secara sadar</li>
-                            <li>Serat panjang dan tidak bercabang</li>
-                            <li>Multinukleat (banyak inti)</li>
-                            <li>Memiliki striasi (garis gelap-terang)</li>
-                        </ul>
+                        <div class="card-detail">
+                            <p>Melekat pada tulang dan bekerja secara sadar (volunter). Kontraksinya menghasilkan berbagai gerakan tubuh serta mempertahankan posisi tubuh.</p>
+                            <ul>
+                                <li>Melekat pada tulang</li>
+                                <li>Bekerja secara sadar</li>
+                                <li>Serat panjang dan tidak bercabang</li>
+                                <li>Multinukleat (banyak inti)</li>
+                                <li>Memiliki striasi (garis gelap-terang)</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="card card-yellow">
+                    <div class="interactive-card card-yellow" onclick="toggleDetail(this)">
                         <h4>🟨 Otot Polos</h4>
-                        <p>Ditemukan pada dinding organ dalam seperti usus, lambung, dan pembuluh darah. Bekerja secara tidak sadar (involunter).</p>
-                        <ul>
-                            <li>Terdapat pada organ dalam</li>
-                            <li>Bekerja tidak sadar</li>
-                            <li>Tidak memiliki pola striasi</li>
-                        </ul>
+                        <div class="card-detail">
+                            <p>Ditemukan pada dinding organ dalam seperti usus, lambung, dan pembuluh darah. Bekerja secara tidak sadar (involunter).</p>
+                            <ul>
+                                <li>Terdapat pada organ dalam</li>
+                                <li>Bekerja tidak sadar</li>
+                                <li>Tidak memiliki pola striasi</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="card card-blue">
+                    <div class="interactive-card card-blue" onclick="toggleDetail(this)">
                         <h4>🟦 Otot Jantung</h4>
-                        <p>Hanya ditemukan pada dinding jantung dan bekerja secara tidak sadar secara ritmis untuk memompa darah ke seluruh tubuh.</p>
-                        <ul>
-                            <li>Hanya terdapat di jantung</li>
-                            <li>Bekerja tidak sadar</li>
-                            <li>Berkontraksi secara ritmis</li>
-                        </ul>
+                        <div class="card-detail">
+                            <p>Hanya ditemukan pada dinding jantung dan bekerja secara tidak sadar secara ritmis untuk memompa darah ke seluruh tubuh.</p>
+                            <ul>
+                                <li>Hanya terdapat di jantung</li>
+                                <li>Bekerja tidak sadar</li>
+                                <li>Berkontraksi secara ritmis</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="info-box">
@@ -175,7 +180,6 @@
                 </div>
             </div>
 
-            <!-- CIRI HISTOLOGIS TETAP TAMPIL -->
             <div class="histologi-card">
                 <h3>🧫 Ciri Histologis Otot Rangka</h3>
                 <table class="custom-table">
@@ -201,19 +205,15 @@
             <div class="grid-cards-4">
                 <div class="clickable-card" onclick="openModal('mod-sarkolema')">
                     <h4>📱 Sarkolema</h4>
-                    <p class="click-hint">👉 Klik untuk melihat detail</p>
                 </div>
                 <div class="clickable-card" onclick="openModal('mod-tubulus-t')">
                     <h4>🔌 Tubulus T & Triad</h4>
-                    <p class="click-hint">👉 Klik untuk melihat detail</p>
                 </div>
                 <div class="clickable-card" onclick="openModal('mod-retikulum')">
                     <h4>💧 Retikulum Sarkoplasma</h4>
-                    <p class="click-hint">👉 Klik untuk melihat detail</p>
                 </div>
                 <div class="clickable-card" onclick="openModal('mod-miofibril')">
                     <h4>🧵 Miofibril & Miofilamen</h4>
-                    <p class="click-hint">👉 Klik untuk melihat detail</p>
                 </div>
             </div>
         </section>
@@ -222,7 +222,7 @@
         <section id="sec-3" class="content-block">
             <h2 class="slide-down-title">Struktur Molekuler Sarkomer</h2>
             <div class="fixed-intro">
-                <p>Sarkomer adalah unit kontraktil terkecil yang membentang dari satu garis Z ke garis Z berikutnya. Klik setiap kartu di bawah untuk membuka informasi detail molekuler sarkomer!</p>
+                <p>Sarkomer adalah unit kontraktil terkecil yang membentang dari satu garis Z ke garis Z berikutnya.</p>
             </div>
 
             <div class="img-group">
@@ -233,27 +233,27 @@
 
             <div class="grid-cards-6">
                 <div class="interactive-card" onclick="toggleDetail(this)">
-                    <h4>Miosin <span>👉 Klik</span></h4>
+                    <h4>Miosin</h4>
                     <div class="card-detail">Filamen tebal yang memiliki kepala dan ekor miosin. Memiliki aktivitas ATPase untuk menghasilkan gaya kontraksi dan membentuk cross-bridge.</div>
                 </div>
                 <div class="interactive-card" onclick="toggleDetail(this)">
-                    <h4>Aktin <span>👉 Klik</span></h4>
+                    <h4>Aktin</h4>
                     <div class="card-detail">Filamen tipis yang melekat pada garis Z dan memiliki binding site untuk miosin. Bergeser menuju pusat sarkomer saat kontraksi.</div>
                 </div>
                 <div class="interactive-card" onclick="toggleDetail(this)">
-                    <h4>Titin <span>👉 Klik</span></h4>
+                    <h4>Titin</h4>
                     <div class="card-detail">Filamen elastis yang membentang dari Z-disc ke garis M. Mempertahankan posisi miosin di tengah sarkomer dan memberikan gaya pasif saat peregangan.</div>
                 </div>
                 <div class="interactive-card" onclick="toggleDetail(this)">
-                    <h4>Troponin & Tropomiosin <span>👉 Klik</span></h4>
+                    <h4>Troponin & Tropomiosin</h4>
                     <div class="card-detail">Protein regulator. Tropomiosin menutupi binding site aktin saat relaksasi. Ca²⁺ berikatan dengan troponin C untuk menggeser tropomiosin agar binding site terbuka.</div>
                 </div>
                 <div class="interactive-card" onclick="toggleDetail(this)">
-                    <h4>Garis Z & Garis M <span>👉 Klik</span></h4>
+                    <h4>Garis Z & Garis M</h4>
                     <div class="card-detail">Garis Z merupakan batas sarkomer tempat melekatnya aktin. Garis M berada di tengah sarkomer menstabilkan filamen tebal miosin.</div>
                 </div>
                 <div class="interactive-card" onclick="toggleDetail(this)">
-                    <h4>Pita A, Pita I & Zona H <span>👉 Klik</span></h4>
+                    <h4>Pita A, Pita I & Zona H</h4>
                     <div class="card-detail">
                         <p><strong>Pita A:</strong> Daerah gelap (filamen tebal), panjang tetap.</p>
                         <p><strong>Pita I:</strong> Daerah terang (filamen tipis), memendek saat kontraksi.</p>
@@ -263,92 +263,98 @@
             </div>
         </section>
 
-        <!-- 4. NEUROMUSCULAR JUNCTION -->
+        <!-- 4. NEUROMUSCULAR JUNCTION (SEMUA BISA DIKLIK) -->
         <section id="sec-4" class="content-block">
             <h2 class="slide-down-title">Tautan Neuromuscular & Asetilkolin</h2>
             <div class="fixed-intro">
-                <p>Neuromuscular Junction (NMJ) adalah sinapsis kimia khusus yang menghubungkan terminal akson motor neuron dengan membran pelat ujung (motor end-plate) serat otot..</p>
+                <p>Neuromuscular junction (NMJ) merupakan sinapsis khusus yang menghubungkan neuron motorik dengan serat otot rangka melalui neurotransmiter asetilkolin (ACh).</p>
             </div>
 
-            <!-- PART 1: STRUKTUR ANATOMI -->
+            <!-- PART 1: STRUKTUR ANATOMI (BISA DIKLIK) -->
             <div class="sub-section-box">
                 <h3>1. Struktur Anatomi NMJ</h3>
                 <img src="images/gambar_2_11.jpg" alt="Anatomi Neuromuscular Junction" class="content-img">
-                <div class="arrow-cards-layout">
-                    <div class="arrow-card">
+                
+                <div class="grid-cards-3">
+                    <div class="interactive-card" onclick="toggleDetail(this)">
                         <h4>Presynaptic Terminal</h4>
-                        <p>Ujung neuron motorik, mengandung vesikel sinaptik berisi ACh, mitokondria, dan kanal Ca²⁺ berpintu tegangan.</p>
+                        <div class="card-detail">
+                            Ujung neuron motorik, mengandung vesikel sinaptik berisi ACh, mitokondria, dan kanal Ca²⁺ berpintu tegangan.
+                        </div>
                     </div>
-                    <div class="arrow-card">
+                    <div class="interactive-card" onclick="toggleDetail(this)">
                         <h4>Synaptic Cleft</h4>
-                        <p>Celah 30-50 nm berisi lamina basalis dan enzim asetilkolinesterase (AChE) untuk menguraikan ACh.</p>
+                        <div class="card-detail">
+                            Celah 30-50 nm berisi lamina basalis dan enzim asetilkolinesterase (AChE) untuk menguraikan ACh.
+                        </div>
                     </div>
-                    <div class="arrow-card">
+                    <div class="interactive-card" onclick="toggleDetail(this)">
                         <h4>End Plate / Postsynaptic</h4>
-                        <p>Membran otot dengan lipatan junksional (junctional folds) terkonsentrasi reseptor ACh nikotinik.</p>
+                        <div class="card-detail">
+                            Membran otot dengan lipatan junksional (junctional folds) terkonsentrasi reseptor ACh nikotinik.
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- PART 2: TAHAPAN PELEPASAN ACH (INTERAKTIF KARTU KLIK) -->
-            <div class="sub-section-box">
-                <h3>2. Tahapan & Pelepasan Asetilkolin</h3>
-                <p class="section-subtext">👆 <em>Klik setiap langkah di bawah ini untuk mempelajari prosesnya!</em></p>
+            <!-- PART 2: TAHAPAN PELEPASAN ACH (BISA DIKLIK) -->
+            <div class="sub-section-box" style="margin-top:25px;">
+                <h3>2. Tahapan Pelepasan & Kerja Asetilkolin</h3>
                 <img src="images/gambar_2_12.jpg" alt="Mekanisme NMJ" class="content-img">
                 
                 <div class="grid-cards-4">
                     <div class="interactive-card step-interactive" onclick="toggleDetail(this)">
                         <div class="step-num">Langkah 1</div>
-                        <h4>Potensial Aksi Tiba <span>👉 Klik</span></h4>
+                        <h4>Potensial Aksi Tiba</h4>
                         <div class="card-detail">
                             Impuls saraf (potensial aksi) merambat di sepanjang akson neuron motorik hingga mencapai terminal prasinapsis.
                         </div>
                     </div>
                     <div class="interactive-card step-interactive" onclick="toggleDetail(this)">
                         <div class="step-num">Langkah 2</div>
-                        <h4>Influks Ion Ca²⁺ <span>👉 Klik</span></h4>
+                        <h4>Influks Ion Ca²⁺</h4>
                         <div class="card-detail">
                             Depolarisasi memicu pembukaan kanal kalsium berpintu tegangan di terminal pra-sinapsis, sehingga ion Ca²⁺ masuk ke dalam terminal saraf.
                         </div>
                     </div>
                     <div class="interactive-card step-interactive" onclick="toggleDetail(this)">
                         <div class="step-num">Langkah 3</div>
-                        <h4>Eksositosis Asetilkolin <span>👉 Klik</span></h4>
+                        <h4>Eksositosis Asetilkolin</h4>
                         <div class="card-detail">
                             Masuknya Ca²⁺ memicu eksositosis vesikel sinaptik, melepaskan neurotransmiter Asetilkolin (ACh) ke dalam celah sinaptik.
                         </div>
                     </div>
                     <div class="interactive-card step-interactive" onclick="toggleDetail(this)">
                         <div class="step-num">Langkah 4</div>
-                        <h4>Difusi Celah Sinaptik <span>👉 Klik</span></h4>
+                        <h4>Difusi Celah Sinaptik</h4>
                         <div class="card-detail">
                             ACh berdifusi melintasi celah sinaptik (synaptic cleft) menuju membran pascasinapsis (motor end plate).
                         </div>
                     </div>
                     <div class="interactive-card step-interactive" onclick="toggleDetail(this)">
                         <div class="step-num">Langkah 5</div>
-                        <h4>Ikatan Reseptor ACh <span>👉 Klik</span></h4>
+                        <h4>Ikatan Reseptor ACh</h4>
                         <div class="card-detail">
                             ACh berikatan dengan reseptor asetilkolin nikotinik pada membran motor end plate, membuka kanal kation yang bergantung pada ligan.
                         </div>
                     </div>
                     <div class="interactive-card step-interactive" onclick="toggleDetail(this)">
                         <div class="step-num">Langkah 6</div>
-                        <h4>Depolarisasi & EPP <span>👉 Klik</span></h4>
+                        <h4>Depolarisasi & EPP</h4>
                         <div class="card-detail">
                             Ion Na⁺ berdifusi cepat masuk ke sel otot, menyebabkan depolarisasi lokal yang menghasilkan <em>End-Plate Potential (EPP)</em>.
                         </div>
                     </div>
                     <div class="interactive-card step-interactive" onclick="toggleDetail(this)">
                         <div class="step-num">Langkah 7</div>
-                        <h4>Potensial Aksi Otot <span>👉 Klik</span></h4>
+                        <h4>Potensial Aksi Otot</h4>
                         <div class="card-detail">
                             EPP memicu potensial aksi yang merambat di sepanjang sarkolema dan masuk ke dalam tubulus T untuk menginisiasi kontraksi.
                         </div>
                     </div>
                     <div class="interactive-card step-interactive" onclick="toggleDetail(this)">
                         <div class="step-num">Langkah 8</div>
-                        <h4>Degradasi oleh AChE <span>👉 Klik</span></h4>
+                        <h4>Degradasi oleh AChE</h4>
                         <div class="card-detail">
                             Enzim Asetilkolinesterase (AChE) dengan cepat menguraikan ACh menjadi asetat dan kolin untuk menghentikan stimulasi otot.
                         </div>
@@ -361,7 +367,7 @@
         <section id="sec-5" class="content-block">
             <h2 class="slide-down-title">Sliding Filament Theory</h2>
             <div class="fixed-intro">
-                <p>Kontraksi terjadi karena pergeseran relatif filamen aktin di atas filamen miosin yang ditarik oleh kayuhan daya (power stroke) kepala miosin dengan bantuan energi ATP. Klik setiap langkah proses kontraksi di bawah untuk melihat penjelasan interaktifnya!</p>
+                <p>Kontraksi otot terjadi melalui pergeseran relatif filamen aktin dan miosin.</p>
             </div>
 
             <div class="img-group">
@@ -369,46 +375,45 @@
                 <img src="images/gambar_2_15.jpg" alt="Tahapan Sliding Filament" class="content-img-half">
             </div>
 
-            <!-- LANGKAH SLIDING FILAMENT BISA DIKLIK -->
             <div class="grid-cards-6">
                 <div class="interactive-card step-card-click" onclick="toggleDetail(this)">
                     <div class="step-badge">1</div>
-                    <h4>Potensial Aksi & Tubulus T <span>👉 Klik</span></h4>
+                    <h4>Potensial Aksi & Tubulus T</h4>
                     <div class="card-detail">
                         Potensial aksi merambat di sepanjang sarkolema dan masuk ke dalam tubulus T, merangsang reseptor DHP.
                     </div>
                 </div>
                 <div class="interactive-card step-card-click" onclick="toggleDetail(this)">
                     <div class="step-badge">2</div>
-                    <h4>Pelepasan Ion Ca²⁺ <span>👉 Klik</span></h4>
+                    <h4>Pelepasan Ion Ca²⁺</h4>
                     <div class="card-detail">
                         Sinyal listrik membendung reseptor ryanodine (RyR) di retikulum sarkoplasma, memicu pelepasan ion Ca²⁺ ke sarkoplasma.
                     </div>
                 </div>
                 <div class="interactive-card step-card-click" onclick="toggleDetail(this)">
                     <div class="step-badge">3</div>
-                    <h4>Pengikatan Ca²⁺-Troponin <span>👉 Klik</span></h4>
+                    <h4>Pengikatan Ca²⁺-Troponin</h4>
                     <div class="card-detail">
                         Ca²⁺ berikatan dengan Troponin C, menyebabkan perubahan konformasi yang menarik Tropomiosin dan membuka <em>binding site</em> aktin.
                     </div>
                 </div>
                 <div class="interactive-card step-card-click" onclick="toggleDetail(this)">
                     <div class="step-badge">4</div>
-                    <h4>Pembentukan Cross-Bridge <span>👉 Klik</span></h4>
+                    <h4>Pembentukan Cross-Bridge</h4>
                     <div class="card-detail">
                         Kepala miosin yang telah terhidrolisis (ADP + Pi) menempel kuat pada binding site aktin yang terbuka membentuk jembatan silang.
                     </div>
                 </div>
                 <div class="interactive-card step-card-click" onclick="toggleDetail(this)">
                     <div class="step-badge">5</div>
-                    <h4>Power Stroke (Kayuhan Utama) <span>👉 Klik</span></h4>
+                    <h4>Power Stroke (Kayuhan Utama)</h4>
                     <div class="card-detail">
                         Pelepasan Pi dan ADP memicu pergerakan kepala miosin (kayuhan), menarik filamen aktin ke arah pusat sarkomer (Garis M).
                     </div>
                 </div>
                 <div class="interactive-card step-card-click" onclick="toggleDetail(this)">
                     <div class="step-badge">6</div>
-                    <h4>Pelepasan ATP & Pengulangan <span>👉 Klik</span></h4>
+                    <h4>Pelepasan ATP & Pengulangan</h4>
                     <div class="card-detail">
                         ATP baru berikatan dengan kepala miosin, memutuskan jembatan silang. ATP dihidrolisis kembali untuk menyiapkan siklus berikutnya.
                     </div>
@@ -436,10 +441,9 @@
         <section id="sec-6" class="content-block">
             <h2 class="slide-down-title">Relaksasi Otot & Pompa Kalsium</h2>
             <div class="fixed-intro">
-                <p>Relaksasi terjadi ketika impuls saraf berhenti dan Ca²⁺ dipompa kembali secara aktif ke dalam retikulum sarkoplasma oleh pompa kalsium SERCA dengan menghabiskan ATP.</p>
+                <p>Relaksasi terjadi setelah stimulasi saraf berhenti dan konsentrasi Ca²⁺ di sitoplasma dikembalikan ke retikulum sarkoplasma.</p>
             </div>
 
-            <!-- PENGERTIAN & PERAN POMPA KALSIUM -->
             <div class="info-box-highlight" style="margin-bottom:20px;">
                 <h3>🧪 Peran Pompa Kalsium (SERCA)</h3>
                 <p><strong>Pompa SERCA (Sarcoplasmic/Endoplasmic Reticulum Calcium ATPase)</strong> adalah protein transpor aktif yang terletak pada membran retikulum sarkoplasma. SERCA berfungsi memompa ion kalsium (Ca²⁺) kembali dari sarkoplasma ke dalam lumina retikulum sarkoplasma melawan gradien konsentrasi dengan mengonsumsi ATP. Penurunan kadar Ca²⁺ bebas ini sangat krusial agar troponin dan tropomiosin dapat kembali menutupi binding site aktin, sehingga siklus kontraksi terhenti dan otot mengalami relaksasi.</p>
@@ -451,37 +455,36 @@
             </div>
 
             <h3>Tahapan Proses Relaksasi Otot</h3>
-            <p class="section-subtext">👇 <em>Klik setiap tahapan di bawah untuk melihat detail penjelasannya:</em></p>
 
             <div class="grid-cards-6">
                 <div class="interactive-card step-card-click" onclick="toggleDetail(this)">
                     <div class="step-badge">1</div>
-                    <h4>Stimulasi Berhenti <span>👉 Klik</span></h4>
+                    <h4>Stimulasi Berhenti</h4>
                     <div class="card-detail">Pelepasan ACh di NMJ terhenti dan ACh yang tersisa segera diuraikan oleh enzim asetilkolinesterase (AChE).</div>
                 </div>
                 <div class="interactive-card step-card-click" onclick="toggleDetail(this)">
                     <div class="step-badge">2</div>
-                    <h4>Repolarisasi Membran <span>👉 Klik</span></h4>
+                    <h4>Repolarisasi Membran</h4>
                     <div class="card-detail">Sarkolema dan tubulus T kembali ke potensial istirahat, menghentikan penutupan sinyal pada reseptor DHP/RyR.</div>
                 </div>
                 <div class="interactive-card step-card-click" onclick="toggleDetail(this)">
                     <div class="step-badge">3</div>
-                    <h4>Aktivasi Pompa SERCA <span>👉 Klik</span></h4>
+                    <h4>Aktivasi Pompa SERCA</h4>
                     <div class="card-detail">Pompa SERCA secara aktif memompa ion Ca²⁺ dari sitoplasma kembali masuk ke dalam kantong retikulum sarkoplasma menggunakan energi ATP.</div>
                 </div>
                 <div class="interactive-card step-card-click" onclick="toggleDetail(this)">
                     <div class="step-badge">4</div>
-                    <h4>Pelepasan Ca²⁺ Troponin <span>👉 Klik</span></h4>
+                    <h4>Pelepasan Ca²⁺ Troponin</h4>
                     <div class="card-detail">Konsentrasi Ca²⁺ di sarkoplasma menurun drastis, menyebabkan ion Ca²⁺ lepas dari troponin C.</div>
                 </div>
                 <div class="interactive-card step-card-click" onclick="toggleDetail(this)">
                     <div class="step-badge">5</div>
-                    <h4>Penutupan Binding Site <span>👉 Klik</span></h4>
+                    <h4>Penutupan Binding Site</h4>
                     <div class="card-detail">Troponin kembali ke bentuk semula dan mendorong tropomiosin untuk menutupi kembali <em>binding site</em> pada filamen aktin.</div>
                 </div>
                 <div class="interactive-card step-card-click" onclick="toggleDetail(this)">
                     <div class="step-badge">6</div>
-                    <h4>Relaksasi Otot <span>👉 Klik</span></h4>
+                    <h4>Relaksasi Otot</h4>
                     <div class="card-detail">Pembentukan cross-bridge terhenti total. Filamen kembali meluncur ke posisi semula dan tegangan otot menurun (relaksasi).</div>
                 </div>
             </div>
@@ -491,13 +494,13 @@
         <section id="sec-7" class="content-block">
             <h2 class="slide-down-title">Sumber Energi Kontraksi</h2>
             <div class="fixed-intro">
-                <p>ATP merupakan sumber energi langsung untuk kontraksi otot. Karena cadangan ATP sangat terbatas, sel otot meregenerasi ATP melalui 3 jalur metabolik. Klik kartu jalur energi di bawah!</p>
+                <p>ATP merupakan sumber energi langsung untuk kontraksi otot. Karena cadangan ATP sangat terbatas, sel otot meregenerasi ATP melalui 3 jalur metabolik.</p>
             </div>
 
             <div class="grid-cards-3">
                 <div class="interactive-card energy-card-interactive" onclick="toggleDetail(this)">
                     <div class="energy-icon">⚡</div>
-                    <h4>Jalur Fosfagen (Fosfokreatin) <span>👉 Klik</span></h4>
+                    <h4>Jalur Fosfagen (Fosfokreatin)</h4>
                     <p class="energy-tag">Sangat Cepat | Anaerobik</p>
                     <div class="card-detail">
                         <p><strong>Mekanisme:</strong> Senyawa Kreatin Fosfat (CP) mentransfer gugus fosfat bernilai energi tinggi langsung ke ADP melalui enzim Kreatin Kinase untuk membentuk ATP.</p>
@@ -507,7 +510,7 @@
 
                 <div class="interactive-card energy-card-interactive" onclick="toggleDetail(this)">
                     <div class="energy-icon">🔥</div>
-                    <h4>Glikolisis Anaerobik <span>👉 Klik</span></h4>
+                    <h4>Glikolisis Anaerobik</h4>
                     <p class="energy-tag">Cepat | Tanpa Oksigen</p>
                     <div class="card-detail">
                         <p><strong>Mekanisme:</strong> Memecah glukosa atau glikogen di sitoplasma tanpa bantuan O₂ menjadi asam piruvat, menghasilkan 2 ATP per molekul glukosa. Jika O₂ kurang, piruvat diubah menjadi asam laktat.</p>
@@ -517,7 +520,7 @@
 
                 <div class="interactive-card energy-card-interactive" onclick="toggleDetail(this)">
                     <div class="energy-icon">🌱</div>
-                    <h4>Respirasi Aerobik <span>👉 Klik</span></h4>
+                    <h4>Respirasi Aerobik</h4>
                     <p class="energy-tag">Lambat | Membutuhkan Oksigen</p>
                     <div class="card-detail">
                         <p><strong>Mekanisme:</strong> Berlangsung di mitokondria dengan memecah glukosa, asam lemak, atau asam amino secara sempurna menggunakan O₂ melalui siklus Krebs dan fosforilasi oksidatif, menghasilkan ~32 ATP.</p>
@@ -531,7 +534,7 @@
         <section id="sec-8" class="content-block">
             <h2 class="slide-down-title">Kedutan, Sumasi, Tetanus & Kelelahan</h2>
             <div class="fixed-intro">
-                <p>Klik setiap konsep di bawah untuk mempelajari karakteristik kedutan otot, akumulasi gelombang sumasi, tetanus, dan kelelahan otot!</p>
+                <p>Pembahasan karakteristik kedutan otot, akumulasi gelombang sumasi, tetanus, dan kelelahan otot.</p>
             </div>
 
             <div class="img-group">
@@ -541,7 +544,7 @@
 
             <div class="grid-cards-3">
                 <div class="interactive-card" onclick="toggleDetail(this)">
-                    <h4>📈 Kedutan Otot (Muscle Twitch) <span>👉 Klik</span></h4>
+                    <h4>📈 Kedutan Otot (Muscle Twitch)</h4>
                     <div class="card-detail">
                         <p>Respons mekanik tunggal terhadap satu potensial aksi. Terdiri atas 3 fase utama:</p>
                         <ul>
@@ -553,7 +556,7 @@
                 </div>
 
                 <div class="interactive-card" onclick="toggleDetail(this)">
-                    <h4>📊 Sumasi Gelombang & Tetanus <span>👉 Klik</span></h4>
+                    <h4>📊 Sumasi Gelombang & Tetanus</h4>
                     <div class="card-detail">
                         <p><strong>Sumasi Gelombang:</strong> Terjadi jika stimulus kedua tiba sebelum relaksasi sempurna selesai, menambah tegangan mekanis secara bertingkat.</p>
                         <p><strong>Tetanus:</strong> Kontraksi bertahan tanpa relaksasi akibat frekuensi stimulasi yang sangat tinggi. Terbagi menjadi:</p>
@@ -565,7 +568,7 @@
                 </div>
 
                 <div class="interactive-card" onclick="toggleDetail(this)">
-                    <h4>🔋 Kelelahan Otot (Muscle Fatigue) <span>👉 Klik</span></h4>
+                    <h4>🔋 Kelelahan Otot (Muscle Fatigue)</h4>
                     <div class="card-detail">
                         <p>Ketidakmampuan otot mempertahankan tegangan akibat stimulasi berkepanjangan.</p>
                         <p><strong>Penyebab:</strong> Akumulasi Fosfat Anorganik (Pi), gangguan ion K⁺ pada tubulus T, penurunan sensitivitas Ca²⁺ pada troponin, serta kelelahan sistem saraf pusat (kelelahan sentral).</p>
@@ -578,12 +581,12 @@
         <section id="sec-9" class="content-block">
             <h2 class="slide-down-title">Kelainan Sistem Otot</h2>
             <div class="fixed-intro">
-                <p>👇 <em>Klik pada nama kelainan di bawah ini untuk melihat gambar dan penjelasan lengkapnya!</em></p>
+                <p>Berbagai jenis kelainan patologis yang dapat terjadi pada sistem muskular.</p>
             </div>
 
             <div class="grid-cards-2">
                 <div class="interactive-card disorder-card" onclick="toggleDetail(this)">
-                    <h4>🧬 Distrofi Otot Duchenne (DMD) <span>👉 Klik</span></h4>
+                    <h4>🧬 Distrofi Otot Duchenne (DMD)</h4>
                     <div class="card-detail">
                         <img src="images/gambar_2_23.jpg" alt="Distrofi Otot Duchenne">
                         <p>Penyakit genetis terikat kromosom X akibat tidak terbentuknya protein distrofin yang menghubungkan miofibril ke sarkolema. Menyebabkan pengeroposan dan kelemahan otot progresif sejak masa kanak-kanak.</p>
@@ -591,7 +594,7 @@
                 </div>
 
                 <div class="interactive-card disorder-card" onclick="toggleDetail(this)">
-                    <h4>🧠 Miastenia Gravis (MG) <span>👉 Klik</span></h4>
+                    <h4>🧠 Miastenia Gravis (MG)</h4>
                     <div class="card-detail">
                         <img src="images/gambar_2_22.jpg" alt="Miastenia Gravis">
                         <p>Penyakit autoimun di mana antibodi merusak reseptor ACh di NMJ, menyebabkan kelemahan otot yang memburuk saat aktivitas (gejala khas: kelopak mata terkulai/ptosis, diplopia, dan kelemahan wajah).</p>
@@ -599,7 +602,7 @@
                 </div>
 
                 <div class="interactive-card disorder-card" onclick="toggleDetail(this)">
-                    <h4>🦠 Tetanus <span>👉 Klik</span></h4>
+                    <h4>🦠 Tetanus</h4>
                     <div class="card-detail">
                         <img src="images/gambar_2_25.jpg" alt="Tetanus">
                         <p>Infeksi bakteri <em>Clostridium tetani</em> yang menghasilkan neurotoksin tetanospasmin. Toksin menghambat pelepasan neurotransmiter inhibitorik, memicu kejang dan kontraksi kaku terus-menerus (lockjaw).</p>
@@ -607,7 +610,7 @@
                 </div>
 
                 <div class="interactive-card disorder-card" onclick="toggleDetail(this)">
-                    <h4>🦴 Tendinitis <span>👉 Klik</span></h4>
+                    <h4>🦴 Tendinitis</h4>
                     <div class="card-detail">
                         <img src="images/gambar_2_24.jpg" alt="Tendinitis">
                         <p>Peradangan atau iritasi pada tendon akibat penggunaan berulang dan berlebihan (overuse). Sering terjadi pada siku (tennis elbow), tumit (Achilles tendinitis), atau bahu.</p>
